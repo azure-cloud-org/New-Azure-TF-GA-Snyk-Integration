@@ -54,7 +54,7 @@ resource "azurerm_subnet" "mysubnet-snyk-new" {
 ##creating allow all inbound firewall rule to verify synk SAST detection
 resource "azurerm_network_security_group" "example-synk-new" {
   name                = "example-nsg-new"
-  location            = zurerm_resource_group.new-myrg-snyk.location
+  location            = azurerm_resource_group.new-myrg-snyk.location
   resource_group_name = azurerm_resource_group.new-myrg-snyk.name
 
   security_rule {
