@@ -58,7 +58,7 @@ resource "azurerm_network_security_group" "example-synk-new" {
 
   security_rule {
     name                       = "test123"
-    priority                   = 102
+    priority                   = 105
     direction                  = "Inbound"
     access                     = "Allow"
     protocol                   = "Tcp"
