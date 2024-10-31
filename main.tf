@@ -50,7 +50,6 @@ resource "azurerm_subnet" "mysubnet-snyk-new" {
   address_prefixes     = ["10.5.0.0/27"]
 }
 
-
 ##creating allow all inbound firewall rule to verify synk SAST detection
 resource "azurerm_network_security_group" "example-synk-new" {
   name                = "example-nsg-new"
