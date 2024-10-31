@@ -28,7 +28,7 @@ resource "azurerm_subnet" "mysubnet-sonarcloud" {
 # Create a resource group
 resource "azurerm_resource_group" "new-myrg-snyk" {
   name = "myrg-snyk-integration-new"
-  location = "East US"
+  location = "south india"
   
 }
 
